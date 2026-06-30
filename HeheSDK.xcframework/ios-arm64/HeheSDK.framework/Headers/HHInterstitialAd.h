@@ -42,7 +42,8 @@ NS_ASSUME_NONNULL_BEGIN
  * @brief 创建插页对象。
  * @param placementID 广告位 ID。
  */
-- (instancetype)initWithPlacementID:(NSString *)placementID;
+- (instancetype)initWithPlacementID:(NSString *)placementID
+    NS_SWIFT_NAME(init(placementID:));
 
 /// 禁止使用默认初始化。
 - (instancetype)init NS_UNAVAILABLE;
@@ -60,7 +61,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)showAdFromRootViewController NS_SWIFT_NAME(showAdFromRootViewController());
 
 /// 销毁指定 placement 缓存。
-- (void)destroy:(NSArray<NSString *> *)placementIDs NS_SWIFT_NAME(destroy(_:));
+- (void)destroy:(NSArray<NSString *> *)placementIDs NS_SWIFT_NAME(destroy(placementIDs:));
 
 @end
 

@@ -9,11 +9,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger, HHBannerAdSize) {
     /// 320x50 Banner。
-    HHBannerAdSize320x50 = 0,
+    HHBannerAdSize320x50 NS_SWIFT_NAME(size320x50) = 0,
     /// 320x100 Banner。
-    HHBannerAdSize320x100 = 1,
+    HHBannerAdSize320x100 NS_SWIFT_NAME(size320x100) = 1,
     /// 300x250 Banner。
-    HHBannerAdSize300x250 = 2,
+    HHBannerAdSize300x250 NS_SWIFT_NAME(size300x250) = 2,
 };
 
 @class HHBannerAd;
@@ -54,7 +54,8 @@ typedef NS_ENUM(NSInteger, HHBannerAdSize) {
  * @note 加载成功后只需 `addSubview:` 到容器，SDK 会按 bannerSize 在父视图中居中，无需手动设置 frame。
  */
 - (instancetype)initWithPlacementID:(NSString *)placementID
-                         bannerSize:(HHBannerAdSize)bannerSize;
+                         bannerSize:(HHBannerAdSize)bannerSize
+    NS_SWIFT_NAME(init(placementID:bannerSize:));
 
 /// 禁止使用默认初始化。
 - (instancetype)init NS_UNAVAILABLE;
