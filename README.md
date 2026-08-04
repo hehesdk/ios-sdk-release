@@ -2,7 +2,7 @@
 
 Hehe iOS 广告 SDK（Core + 可选聚合适配器）。
 
-当前版本：`0.2.1`
+当前版本：`0.2.2`
 
 ## CocoaPods
 
@@ -12,20 +12,20 @@ use_frameworks!
 
 target 'YourApp' do
   # 仅 Core（直连 Hehe）
-  # pod 'HeheAdSDK', '0.2.1'
+  # pod 'HeheAdSDK', '0.2.2'
 
   # 或按聚合选型只选一个 Adapter Subspec（自动含 Core）
-  pod 'HeheAdSDK/AdMob', '0.2.1'
-  # pod 'HeheAdSDK/MAX', '0.2.1'
-  # pod 'HeheAdSDK/TopOn', '0.2.1'   # 依赖 TPNiOS（新 TopOn 平台）
-  # pod 'HeheAdSDK/TradPlus', '0.2.1'
+  pod 'HeheAdSDK/AdMob', '0.2.2'
+  # pod 'HeheAdSDK/MAX', '0.2.2'
+  # pod 'HeheAdSDK/TopOn', '0.2.2'   # 依赖 TPNiOS（新 TopOn 平台）
+  # pod 'HeheAdSDK/TradPlus', '0.2.2'
 end
 ```
 
 Git Tag（trunk 未推或先验证仓库时）：
 
 ```ruby
-pod 'HeheAdSDK/AdMob', :git => 'https://github.com/hehesdk/ios-sdk-release.git', :tag => '0.2.1'
+pod 'HeheAdSDK/AdMob', :git => 'https://github.com/hehesdk/ios-sdk-release.git', :tag => '0.2.2'
 ```
 
 > 不要同时集成多个 Adapter Subspec。
@@ -39,15 +39,21 @@ Xcode → **File → Add Package Dependencies**：
 https://github.com/hehesdk/ios-sdk-release
 ```
 
-可选 Product：
+选 **一个** Adapter Product 即可（已含 Core，不要再勾 `HeheSDK`）：
 
 | Product | 说明 |
 | --- | --- |
 | `HeheSDK` | 仅 Core |
-| `HeheAdMobAdapter` | Core + AdMob Adapter（另需官方 GMA Package） |
-| `HeheMaxAdapter` | Core + MAX Adapter（另需官方 AppLovin Package） |
-| `HeheTopOnAdapter` | Core + TopOn Adapter（聚合 SDK 请用 CocoaPods/手动引入） |
-| `HeheTradPlusAdapter` | Core + TradPlus Adapter（聚合 SDK 请用 CocoaPods/手动引入） |
+| `HeheAdMobAdapter` | Core + AdMob（另需官方 GMA Package） |
+| `HeheMaxAdapter` | Core + MAX（另需官方 AppLovin Package） |
+| `HeheTopOnAdapter` | Core + TopOn（聚合 SDK 请用 CocoaPods/手动引入） |
+| `HeheTradPlusAdapter` | Core + TradPlus（聚合 SDK 请用 CocoaPods/手动引入） |
+
+> **按需下载**：`Package.swift` 使用 GitHub Release 上的远程 binary zip。  
+> 勾选 `HeheAdMobAdapter` 时，SPM 只会拉取 `HeheSDK-*.zip` + `HeheAdMobAdapter-*.zip`，不会拉 MAX/TopOn/TradPlus 的 zip。  
+> 发布时必须把 `releases/*.xcframework.zip` 上传为该 tag 的 **Release Assets**（文件名与 checksum 一致）。
+
+> CocoaPods 仍使用仓库内 `vendored_frameworks`（`HeheSDK.xcframework` / `adapters/`），与 SPM 远程 zip 并行。
 
 ## 后台类名速查
 

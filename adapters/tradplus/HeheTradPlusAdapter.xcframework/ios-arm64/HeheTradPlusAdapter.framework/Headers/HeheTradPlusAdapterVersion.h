@@ -10,7 +10,7 @@
 
 /// TradPlus Adapter 逻辑版本（Core.Rev）。
 #undef HEHE_ADAPTER_VERSION
-#define HEHE_ADAPTER_VERSION @"0.2.1.0"
+#define HEHE_ADAPTER_VERSION @"0.2.2.0"
 
 /// 后台配置：Banner 适配器类名。
 #define HEHE_TRADPLUS_BANNER_ADAPTER_CLASS_NAME @"HeheTradPlusBannerAdapter"

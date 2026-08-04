@@ -10,7 +10,7 @@
 
 /// TopOn Adapter 逻辑版本（Core.Rev）。
 #undef HEHE_ADAPTER_VERSION
-#define HEHE_ADAPTER_VERSION @"0.2.1.0"
+#define HEHE_ADAPTER_VERSION @"0.2.2.0"
 
 /// 后台配置：初始化适配器类名。
 #define HEHE_TOPON_INIT_ADAPTER_CLASS_NAME @"HeheTopOnInitAdapter"
