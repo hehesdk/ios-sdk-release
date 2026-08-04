@@ -1,0 +1,6 @@
+framework module HeheAdMobAdapter {
+  umbrella header "HeheAdMobAdapter.h"
+  export *
+
+  module * { export * }
+}

@@ -25,6 +25,8 @@ typedef NS_ENUM(NSInteger, HHBannerAdSize) {
 - (void)bannerAdDidLoad:(HHBannerAd *)bannerAd;
 /// Banner 加载失败。
 - (void)bannerAd:(HHBannerAd *)bannerAd didFailWithError:(NSError *)error;
+/// Banner 展示失败（如 WebView 渲染失败）。
+- (void)bannerAd:(HHBannerAd *)bannerAd displayFailWithError:(NSError *)error;
 /// Banner 曝光上报完成。
 - (void)bannerAdDidImpression:(HHBannerAd *)bannerAd;
 /// Banner 点击。
@@ -46,6 +48,8 @@ typedef NS_ENUM(NSInteger, HHBannerAdSize) {
 @property (nonatomic, weak, nullable) id<HHBannerAdDelegate> delegate;
 /// 自动刷新间隔（秒），0 表示不刷新。
 @property (nonatomic, assign) NSTimeInterval refreshInterval;
+/// 是否已调用 `destroy` 销毁。
+@property (nonatomic, assign, readonly, getter=isDestroyed) BOOL destroyed;
 
 /**
  * @brief 创建 Banner 对象。
@@ -65,7 +69,11 @@ typedef NS_ENUM(NSInteger, HHBannerAdSize) {
 /// 请求 Banner 广告。
 - (void)loadAd NS_SWIFT_NAME(loadAd());
 
-/// 销毁 Banner 资源。
+/**
+ * @brief 销毁 Banner 广告资源。
+ * @note App 在页面退出、切换广告位、不再需要展示等场景可主动调用。
+ *       销毁后 `isDestroyed` 为 YES，不可再 `loadAd`，需重新创建 `HHBannerAd`。
+ */
 - (void)destroy NS_SWIFT_NAME(destroy());
 
 @end

@@ -1,0 +1,6 @@
+framework module HeheMaxAdapter {
+  umbrella header "HeheMaxAdapter.h"
+  export *
+
+  module * { export * }
+}

@@ -7,15 +7,17 @@ let package = Package(
         .iOS(.v13),
     ],
     products: [
-        .library(
-            name: "HeheSDK",
-            targets: ["HeheSDK"]
-        ),
+        .library(name: "HeheSDK", targets: ["HeheSDK"]),
+        .library(name: "HeheAdMobAdapter", targets: ["HeheAdMobAdapter", "HeheSDK"]),
+        .library(name: "HeheMaxAdapter", targets: ["HeheMaxAdapter", "HeheSDK"]),
+        .library(name: "HeheTopOnAdapter", targets: ["HeheTopOnAdapter", "HeheSDK"]),
+        .library(name: "HeheTradPlusAdapter", targets: ["HeheTradPlusAdapter", "HeheSDK"]),
     ],
     targets: [
-        .binaryTarget(
-            name: "HeheSDK",
-            path: "HeheSDK.xcframework"
-        ),
+        .binaryTarget(name: "HeheSDK", path: "HeheSDK.xcframework"),
+        .binaryTarget(name: "HeheAdMobAdapter", path: "adapters/admob/HeheAdMobAdapter.xcframework"),
+        .binaryTarget(name: "HeheMaxAdapter", path: "adapters/max/HeheMaxAdapter.xcframework"),
+        .binaryTarget(name: "HeheTopOnAdapter", path: "adapters/topon/HeheTopOnAdapter.xcframework"),
+        .binaryTarget(name: "HeheTradPlusAdapter", path: "adapters/tradplus/HeheTradPlusAdapter.xcframework"),
     ]
 )
