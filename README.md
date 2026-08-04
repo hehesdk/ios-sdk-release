@@ -2,7 +2,7 @@
 
 Hehe iOS 广告 SDK（Core + 可选聚合适配器）。
 
-当前版本：`0.2.2`
+当前版本：`0.2.3`
 
 ## CocoaPods
 
@@ -12,20 +12,20 @@ use_frameworks!
 
 target 'YourApp' do
   # 仅 Core（直连 Hehe）
-  # pod 'HeheAdSDK', '0.2.2'
+  # pod 'HeheAdSDK', '0.2.3'
 
   # 或按聚合选型只选一个 Adapter Subspec（自动含 Core）
-  pod 'HeheAdSDK/AdMob', '0.2.2'
-  # pod 'HeheAdSDK/MAX', '0.2.2'
-  # pod 'HeheAdSDK/TopOn', '0.2.2'   # 依赖 TPNiOS（新 TopOn 平台）
-  # pod 'HeheAdSDK/TradPlus', '0.2.2'
+  pod 'HeheAdSDK/AdMob', '0.2.3'
+  # pod 'HeheAdSDK/MAX', '0.2.3'
+  # pod 'HeheAdSDK/TopOn', '0.2.3'   # 依赖 TPNiOS（新 TopOn 平台）
+  # pod 'HeheAdSDK/TradPlus', '0.2.3'
 end
 ```
 
 Git Tag（trunk 未推或先验证仓库时）：
 
 ```ruby
-pod 'HeheAdSDK/AdMob', :git => 'https://github.com/hehesdk/ios-sdk-release.git', :tag => '0.2.2'
+pod 'HeheAdSDK/AdMob', :git => 'https://github.com/hehesdk/ios-sdk-release.git', :tag => '0.2.3'
 ```
 
 > 不要同时集成多个 Adapter Subspec。
@@ -49,9 +49,9 @@ https://github.com/hehesdk/ios-sdk-release
 | `HeheTopOnAdapter` | Core + TopOn（聚合 SDK 请用 CocoaPods/手动引入） |
 | `HeheTradPlusAdapter` | Core + TradPlus（聚合 SDK 请用 CocoaPods/手动引入） |
 
-> **按需下载**：`Package.swift` 使用 GitHub Release 上的远程 binary zip。  
+> **按需下载**：`Package.swift` 使用 CDN 远程 binary zip（`https://res.wooymoon.com/sdk/release/ios/`）。  
 > 勾选 `HeheAdMobAdapter` 时，SPM 只会拉取 `HeheSDK-*.zip` + `HeheAdMobAdapter-*.zip`，不会拉 MAX/TopOn/TradPlus 的 zip。  
-> 发布时必须把 `releases/*.xcframework.zip` 上传为该 tag 的 **Release Assets**（文件名与 checksum 一致）。
+> 发布时必须把 `releases/*-${VERSION}.xcframework.zip` 上传到 CDN，**文件名与 checksum 保持一致**（不要用 GitHub Releases 下载链接）。
 
 > CocoaPods 仍使用仓库内 `vendored_frameworks`（`HeheSDK.xcframework` / `adapters/`），与 SPM 远程 zip 并行。
 

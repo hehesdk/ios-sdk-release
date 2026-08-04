@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'HeheAdSDK'
-  s.version          = '0.2.2'
+  s.version          = '0.2.3'
   s.summary          = 'Hehe iOS Advertising SDK with mediation adapters'
   s.description      = 'Hehe SDK Core plus optional AdMob / MAX / TopOn / TradPlus adapters via Subspecs.'
   s.homepage         = 'https://github.com/hehesdk/ios-sdk-release'

@@ -1,7 +1,7 @@
 // swift-tools-version:5.7
 import PackageDescription
 
-// Binary artifacts are hosted on GitHub Releases for tag 0.2.2.
+// Binary artifacts are hosted at https://res.wooymoon.com/sdk/release/ios/ (not GitHub Releases).
 // Selecting one Adapter product downloads Core + that Adapter zip only (not all adapters).
 let package = Package(
     name: "HeheSDK",
@@ -19,28 +19,28 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "HeheSDK",
-            url: "https://github.com/hehesdk/ios-sdk-release/releases/download/0.2.2/HeheSDK-0.2.2.xcframework.zip",
-            checksum: "a65da8d6d9347fe5464667b695f122a02078d44225cc47b2918ce7f4c5dabb71"
+            url: "https://res.wooymoon.com/sdk/release/ios/HeheSDK-0.2.3.xcframework.zip",
+            checksum: "5ef4d7ae2793c66083c9c00407a106c916b3821e35623d773392bb7a07376554"
         ),
         .binaryTarget(
             name: "HeheAdMobAdapter",
-            url: "https://github.com/hehesdk/ios-sdk-release/releases/download/0.2.2/HeheAdMobAdapter-0.2.2.xcframework.zip",
-            checksum: "e523ffc0803d3d83bb1d42922a615979a28f50ae5c2f5bd66dbf039b78f33575"
+            url: "https://res.wooymoon.com/sdk/release/ios/HeheAdMobAdapter-0.2.3.xcframework.zip",
+            checksum: "c419c4f813bf403ef03697c1cf35351d99b54e7fed7fec4c7bf3b6a1544bcefc"
         ),
         .binaryTarget(
             name: "HeheMaxAdapter",
-            url: "https://github.com/hehesdk/ios-sdk-release/releases/download/0.2.2/HeheMaxAdapter-0.2.2.xcframework.zip",
-            checksum: "19795f25866b7d65f3e71c7b51a901af6b8b9f7b3f272b6c00682d243396663c"
+            url: "https://res.wooymoon.com/sdk/release/ios/HeheMaxAdapter-0.2.3.xcframework.zip",
+            checksum: "bc0f9c72478d2c4318bb6f3ab4313c0d6c354b88d5d7736813991421129adbbf"
         ),
         .binaryTarget(
             name: "HeheTopOnAdapter",
-            url: "https://github.com/hehesdk/ios-sdk-release/releases/download/0.2.2/HeheTopOnAdapter-0.2.2.xcframework.zip",
-            checksum: "e74e3f5e6c4a398a04bbc2b3ebb9b8c00f285ede34464db5b469aa66a9f64ac5"
+            url: "https://res.wooymoon.com/sdk/release/ios/HeheTopOnAdapter-0.2.3.xcframework.zip",
+            checksum: "60d03c75f6dec7e0009b9a64c3dd158f2d7f5de53ac360f9c9c7a7c5d5c7ea63"
         ),
         .binaryTarget(
             name: "HeheTradPlusAdapter",
-            url: "https://github.com/hehesdk/ios-sdk-release/releases/download/0.2.2/HeheTradPlusAdapter-0.2.2.xcframework.zip",
-            checksum: "4d50884791eff3e1ae9b6f4c857d561005cb8a0337997b9842e1b87fb6e6d229"
+            url: "https://res.wooymoon.com/sdk/release/ios/HeheTradPlusAdapter-0.2.3.xcframework.zip",
+            checksum: "8587da262ddf33230555dc12593d894ff11099cd6bc8b8d89750bce9b91f932a"
         ),
     ]
 )
