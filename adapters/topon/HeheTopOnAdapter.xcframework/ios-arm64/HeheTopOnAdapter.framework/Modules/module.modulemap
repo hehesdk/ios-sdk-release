@@ -1,6 +1,0 @@
-framework module HeheTopOnAdapter {
-  umbrella header "HeheTopOnAdapter.h"
-  export *
-
-  module * { export * }
-}

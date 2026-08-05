@@ -1,6 +1,0 @@
-framework module HeheTradPlusAdapter {
-  umbrella header "HeheTradPlusAdapter.h"
-  export *
-
-  module * { export * }
-}
