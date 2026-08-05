@@ -1,8 +1,7 @@
-# sync 脚本本地打包产物，无需提交
 releases/*.zip
+HeheSDK.xcframework/
+adapters/
 .DS_Store
-
-# Xcode / SPM 本地状态
 .swiftpm/xcode/package.xcworkspace/xcuserdata/
 .swiftpm/xcode/xcuserdata/
 **/xcuserdata/
