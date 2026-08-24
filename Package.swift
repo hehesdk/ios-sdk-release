@@ -19,27 +19,27 @@ let package = Package(
         .binaryTarget(
             name: "HeheSDK",
             url: "https://res.wooymoon.com/sdk/release/ios/HeheSDK-0.2.7.xcframework.zip",
-            checksum: "5c63724ca352f79473f38317cd510c5442508736cbfbe42c076fd531148f572d"
+            checksum: "d514c330ef307ce33c8512b71838c709c36ee22a73467662274a655dba0fd074"
         ),
         .binaryTarget(
             name: "HeheAdMobAdapter",
             url: "https://res.wooymoon.com/sdk/release/ios/HeheAdMobAdapter-0.2.7.xcframework.zip",
-            checksum: "05ecf77453d12c1f9874f45b8efd96aac27a21b5476f543c4594ecb25eac4b0d"
+            checksum: "731a3530f785e38ad7ff9e233224e27d2ed676e871e415cdcd5b798dd7bcfef6"
         ),
         .binaryTarget(
             name: "HeheMaxAdapter",
             url: "https://res.wooymoon.com/sdk/release/ios/HeheMaxAdapter-0.2.7.xcframework.zip",
-            checksum: "ed2151b027adcab01e7794e5a94266c8f0f68c48d8c7503958e8425ae7ed1e96"
+            checksum: "aea983bddc213e1faab6ce4f4f9aecb36198f128da9aa3f7688203543a9c348f"
         ),
         .binaryTarget(
             name: "HeheTopOnAdapter",
             url: "https://res.wooymoon.com/sdk/release/ios/HeheTopOnAdapter-0.2.7.xcframework.zip",
-            checksum: "7ba881d65ce4a5712576bfa5da7e0a45394a177e1824d05ed9d39619050a6d71"
+            checksum: "69565edc96a48d495e58a598225551e06be620a16628017ca1b3866919cbf8e4"
         ),
         .binaryTarget(
             name: "HeheTradPlusAdapter",
             url: "https://res.wooymoon.com/sdk/release/ios/HeheTradPlusAdapter-0.2.7.xcframework.zip",
-            checksum: "230ee4a9cc8b19e4b6499bf138fdc64b666147db412be7929106f95d818d3796"
+            checksum: "95a28086bed8997df53572129343be01fb6c280c2d2259d97c573e91bd04367a"
         ),
     ]
 )
