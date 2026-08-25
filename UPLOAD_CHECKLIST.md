@@ -1,4 +1,4 @@
-# 人工发布清单 0.2.7
+# 人工发布清单 0.2.8
 
 **GitHub / CDN 由你操作。**
 
@@ -6,12 +6,12 @@
 
 https://res.wooymoon.com/sdk/release/ios/
 
-- HeheSDK-0.2.7.xcframework.zip
-- HeheAdMobAdapter-0.2.7.xcframework.zip
-- HeheMaxAdapter-0.2.7.xcframework.zip
-- HeheTopOnAdapter-0.2.7.xcframework.zip
-- HeheTradPlusAdapter-0.2.7.xcframework.zip
-- HeheAdSDK-0.2.7.zip（Deprecated）
+- HeheSDK-0.2.8.xcframework.zip
+- HeheAdMobAdapter-0.2.8.xcframework.zip
+- HeheMaxAdapter-0.2.8.xcframework.zip
+- HeheTopOnAdapter-0.2.8.xcframework.zip
+- HeheTradPlusAdapter-0.2.8.xcframework.zip
+- HeheAdSDK-0.2.8.zip（Deprecated）
 
 本地：`releases/`
 
@@ -21,9 +21,9 @@ https://res.wooymoon.com/sdk/release/ios/
 cd HeheSDK-Release
 git rm -r --cached HeheSDK.xcframework adapters 2>/dev/null || true
 git add -A && git status
-git commit -m "Release 0.2.7 (thin repo + CDN on-demand SPM)"
-git tag 0.2.7
-git push origin HEAD && git push origin 0.2.7
+git commit -m "Release 0.2.8 (thin repo + CDN on-demand SPM)"
+git tag 0.2.8
+git push origin HEAD && git push origin 0.2.8
 ```
 
 ## 3. Spec Repo ios-sdk-specs
@@ -31,9 +31,9 @@ git push origin HEAD && git push origin 0.2.7
 ```bash
 cd HeheSDKSpecs
 git add -A
-git commit -m "Specs 0.2.7: HeheSDK + Adapters + Deprecated HeheAdSDK"
-git tag 0.2.7
-git push origin HEAD && git push origin 0.2.7
+git commit -m "Specs 0.2.8: HeheSDK + Adapters + Deprecated HeheAdSDK"
+git tag 0.2.8
+git push origin HEAD && git push origin 0.2.8
 ```
 
 ## 4. 验证
