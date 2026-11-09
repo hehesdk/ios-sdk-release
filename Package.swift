@@ -18,28 +18,28 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "HeheSDK",
-            url: "https://res.wooymoon.com/sdk/release/ios/HeheSDK-0.2.9.xcframework.zip",
-            checksum: "597735a26dbac9cbcb815ff1bbd63de8f523dfe097fa872f8373f54566b74d00"
+            url: "https://res.wooymoon.com/sdk/release/ios/HeheSDK-0.2.10.xcframework.zip",
+            checksum: "788b33c788ede06f7006faee03aaa516c005c66a605e055a3e3e485b66b16dab"
         ),
         .binaryTarget(
             name: "HeheAdMobAdapter",
-            url: "https://res.wooymoon.com/sdk/release/ios/HeheAdMobAdapter-0.2.9.xcframework.zip",
-            checksum: "a95b637bfa40d46ec42d8d231269475628f28a097afb6cb1a5b07a4991eb61fd"
+            url: "https://res.wooymoon.com/sdk/release/ios/HeheAdMobAdapter-0.2.10.xcframework.zip",
+            checksum: "2cd3f39603a0e0d49a6a533b6564d2717eab79b258345b0e7ab767404e1beb63"
         ),
         .binaryTarget(
             name: "HeheMaxAdapter",
-            url: "https://res.wooymoon.com/sdk/release/ios/HeheMaxAdapter-0.2.9.xcframework.zip",
-            checksum: "80625da06e243b480d8d05d628a9a84069bd47de257eba3ab467d43c48d27919"
+            url: "https://res.wooymoon.com/sdk/release/ios/HeheMaxAdapter-0.2.10.xcframework.zip",
+            checksum: "a06937715674cc49666c0e9c0a85443f06443209d8118390fde8911ad04fb826"
         ),
         .binaryTarget(
             name: "HeheTopOnAdapter",
-            url: "https://res.wooymoon.com/sdk/release/ios/HeheTopOnAdapter-0.2.9.xcframework.zip",
-            checksum: "ad7946d6a003c24bdf03759761fd3d43936bc0b13b557665b11c7b2a048be039"
+            url: "https://res.wooymoon.com/sdk/release/ios/HeheTopOnAdapter-0.2.10.xcframework.zip",
+            checksum: "1c77d40361f68642d5b33857eb0302013980fa8721a156ff2f1b6c6a5b0ee6ea"
         ),
         .binaryTarget(
             name: "HeheTradPlusAdapter",
-            url: "https://res.wooymoon.com/sdk/release/ios/HeheTradPlusAdapter-0.2.9.xcframework.zip",
-            checksum: "2f54f2013841e13164ad058a3c3cd508c899788d1701ebd962a254f1ad567880"
+            url: "https://res.wooymoon.com/sdk/release/ios/HeheTradPlusAdapter-0.2.10.xcframework.zip",
+            checksum: "f336333f179b27b3d56969c85c3931a0dda7844979706b028073511e4c3d5202"
         ),
     ]
 )
